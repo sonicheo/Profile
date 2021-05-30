@@ -6,28 +6,25 @@ const Carousel = ()  =>{
     const [current, setCurrent] = useState(0)
     const length = couraselData.length
 
-    console.log(current)
+    
 
     const nextSlide = () =>{
         setCurrent(current === length-1 ? 0 : current + 1)
-        console.log(current)
     }
 
     const prevSlide = () =>{
         setCurrent(current === 0 ? length-1 : current - 1)
-        console.log(current)
     }
 
-    useEffect(() => {
-        var interval;
-        interval = setInterval(function(){setCurrent(current === length-1 ? 0 : current + 1)}, 5000)
-        return () => clearInterval(interval)
-    },[current])
+    // useEffect(() => {
+    //     var interval;
+    //     interval = setInterval(function(){setCurrent(current === length-1 ? 0 : current + 1)}, 5000)
+    //     return () => clearInterval(interval)
+    // },[current])
 
-   
 
     return(
-        <div className="mt-5 flex relative justify-center items-center">
+        <div className="mt-5 relative overflow-hidden text-center" style={{height: "460px"}} >
             <FaArrowAltCircleLeft 
                 className="text-5xl absolute z-10 top-2/4 left-0" 
                 onClick={prevSlide}
@@ -42,10 +39,11 @@ const Carousel = ()  =>{
                         <div 
                         key = {index}
                         className={index != current ? 
-                        "hidden transition-opacity " : 
-                        "transition-opacity"} >
+                        "absolute transition-all ease-in-out duration-1000 transform translate-x-full" : 
+                        "absolute transition-all ease-in-out duration-1000 transform translate-x-0"} >
                                     <img 
                                         src={data.Image}
+                                        className="w-full"
                                     />
                                 <h1>{data.Title}</h1>
                                 <p>{data.Body}</p>
