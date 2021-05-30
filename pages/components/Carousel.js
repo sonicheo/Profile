@@ -25,7 +25,8 @@ const Carousel = ()  =>{
 
 
     return(
-        <div className="mt-5 relative overflow-hidden text-center" style={{height: "460px"}} >
+        <>
+        <div className="mt-5 relative overflow-hidden text-center h-screen min-h-full">
             <FaArrowAltCircleLeft 
                 className="text-5xl absolute z-10 top-2/4 left-0" 
                 onClick={prevSlide}
@@ -44,7 +45,6 @@ const Carousel = ()  =>{
                         "absolute transition-all ease-in-out duration-1000 transform translate-x-0"} >
                                     <img 
                                         src={data.Image}
-                                        className="w-full"
                                     />
                                 <h1>{data.Title}</h1>
                                 <p>{data.Body}</p>
@@ -53,6 +53,7 @@ const Carousel = ()  =>{
                 })
             }
         </div>
+        </>
     )
 }
 

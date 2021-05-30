@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <Carousel/>
+      <Carousel style={{heigh: "400px"}} />
       <Footer/>
     </div>
   )
