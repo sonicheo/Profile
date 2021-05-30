@@ -7,7 +7,7 @@ const Carousel = ()  =>{
     const length = couraselData.length
 
     
-
+    //Constrols slides through arrows
     const nextSlide = () =>{
         setCurrent(current === length-1 ? 0 : current + 1)
     }
@@ -16,11 +16,12 @@ const Carousel = ()  =>{
         setCurrent(current === 0 ? length-1 : current - 1)
     }
 
-    // useEffect(() => {
-    //     var interval;
-    //     interval = setInterval(function(){setCurrent(current === length-1 ? 0 : current + 1)}, 5000)
-    //     return () => clearInterval(interval)
-    // },[current])
+    //This is the interval of changing slides
+    useEffect(() => {
+        var interval;
+        interval = setInterval(function(){setCurrent(current === length-1 ? 0 : current + 1)}, 5000)
+        return () => clearInterval(interval)
+    },[current])
 
 
     return(
