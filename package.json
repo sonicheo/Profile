@@ -9,14 +9,13 @@
     "build:css": "tailwindcss build tailwind/style.css -o styles/tailwind.css"
   },
   "dependencies": {
-    "bootstrap": "^5.0.1",
     "next": "10.2.2",
     "react": "17.0.2",
-    "react-bootstrap": "^1.6.0",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
     "postcss": "^8.3.0",
     "tailwindcss": "^2.1.2"
   }

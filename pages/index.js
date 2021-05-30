@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Header from './components/Header'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Carousel from './components/Carousel';
 
 
 export default function Home() {
@@ -14,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <Projects/>
+      <Carousel/>
       <Footer/>
     </div>
   )
