@@ -28,11 +28,11 @@ const Carousel = ()  =>{
         <>
         <div className="mt-5 relative overflow-hidden text-center h-screen min-h-full">
             <FaArrowAltCircleLeft 
-                className="text-5xl absolute z-10 top-2/4 left-0" 
+                className="text-5xl absolute z-10 top-1/4 left-0" 
                 onClick={prevSlide}
             />
             <FaArrowAltCircleRight 
-                className="text-5xl absolute z-10 top-2/4 right-0"
+                className="text-5xl absolute z-10 top-1/4 right-0"
                 onClick={nextSlide}
             />
             {
@@ -46,8 +46,8 @@ const Carousel = ()  =>{
                                     <img 
                                         src={data.Image}
                                     />
-                                <h1>{data.Title}</h1>
-                                <p>{data.Body}</p>
+                                <h1 className="text-xl font-bold" >{data.Title}</h1>
+                                <p className="">{data.Body}</p>
                         </div>
                     )
                 })
