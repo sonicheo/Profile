@@ -19,7 +19,7 @@ const Carousel = ()  =>{
     //This is the interval of changing slides
     useEffect(() => {
         var interval;
-        interval = setInterval(function(){setCurrent(current === length-1 ? 0 : current + 1)}, 5000)
+        interval = setInterval(function(){setCurrent(current === length-1 ? 0 : current + 1)}, 8000)
         return () => clearInterval(interval)
     },[current])
 
