@@ -5,7 +5,7 @@ const Header = () => {
         
         <div className="flex">
             <div >
-            <div className="h-32">
+            <div className="h-32 ml-2">
               <img 
                 src="https://media-exp1.licdn.com/dms/image/C5603AQHQvo_h_GkEFA/profile-displayphoto-shrink_800_800/0/1572467602965?e=1626912000&v=beta&t=MMBjWy4ru1eqkSt4lVEyS-Kh5TO9cTDiVslTsL90XhY" 
                 alt="Juan Gomez" 
@@ -13,10 +13,10 @@ const Header = () => {
               />
             </div>
 
-            <div className="flex justify-between ml-1">
+            <div className="flex ml-1 mt-2">
               <a 
                 href="https://www.linkedin.com/in/juan-gomez-077135172/" 
-                className="h-10 w-full"
+                className="h-10 w-full mr-2"
               >
               <img 
                 src="https://www.fpsa.org/wp-content/uploads/linkedin-logo-copy.png" 
@@ -26,7 +26,7 @@ const Header = () => {
 
               <a 
                 href="https://github.com/sonicheo" 
-                className="h-10 w-full"
+                className="h-10 w-full mr-2"
               >
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 

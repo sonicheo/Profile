@@ -25,7 +25,7 @@ const Carousel = ()  =>{
 
 
     return(
-        <>
+        <div className ="mt-15">
         <div className="mt-5 relative overflow-hidden text-center h-screen min-h-full">
             <FaArrowAltCircleLeft 
                 className="text-5xl absolute z-10 top-1/4 left-0" 
@@ -53,7 +53,7 @@ const Carousel = ()  =>{
                 })
             }
         </div>
-        </>
+        </div>
     )
 }
 
