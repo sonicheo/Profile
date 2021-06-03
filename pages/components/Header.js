@@ -3,7 +3,7 @@ const Header = () => {
 
     return (
         
-        <div className="flex">
+        <div className="flex pl-14">
             <div >
             <div className="h-32 ml-2">
               <img 
