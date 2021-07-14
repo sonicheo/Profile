@@ -1,3 +1,4 @@
+
 .container{
     position: fixed;
     top: 0;
@@ -8,7 +9,6 @@
     background: rgba(0, 0, 0, .7);
 }
 
-
 .container ul{
     display: flex;
     list-style: none;
@@ -16,7 +16,7 @@
     justify-content: center;
 }
 
-.container ul li {
+.container ul li{
     margin: 0 1rem;
     padding: 1rem;
 }
@@ -24,10 +24,11 @@
 .container ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: #f4f4f4;
+    color: white;
 }
 
 .container ul li a:hover{
     color: skyblue;
     cursor: pointer;
 }
+

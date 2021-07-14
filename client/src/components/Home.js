@@ -1,11 +1,12 @@
 import React from 'react'
-import styles from '../styles/home.module.css'
+import { Container } from 'react-bootstrap'
+import style from '../styles/home.module.css'
 
 const Home = () => {
     return (
-        <div id="home" className={styles.container} >
+        <Container fluid className={style.container} id="home" >
             
-        </div>
+        </Container>
     )
 }
 
