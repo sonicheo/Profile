@@ -1,5 +1,33 @@
 .container{
     height: 100vh;
     width: 100%;
-    background-color: green;
+    background-color: blueviolet;
+    padding-top: 10%;
+    background-image: url('../images/COLOURlovers.com-Gothic_Wallpaper.jpg');
+    overflow: hidden;
+    text-align: center;
 }
+
+.container img{
+    width: 20%;
+    height: 45%;
+    display: block;
+    margin: auto;
+    position: relative;
+    border-radius: 50%;
+}
+
+
+.container h1{
+    word-wrap: break-word;
+    font-size: 25px;
+    position: relative;
+    color: white;
+    color: white;
+    text-shadow: 
+    0.025em 0.025em 0 #CCCCCC,
+    0.050em 0.050em 0 #75FF33,
+    0.075em 0.075em 0 #14CC4C,
+    0.1em 0.1em 0 #296D99;
+}
+

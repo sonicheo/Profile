@@ -1,0 +1,64 @@
+.carousel{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.carouselButton{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.left{
+    left: -30px;
+}
+.right{
+    right: -30px;
+}
+
+.trackContainer{
+    height: 100%;
+    width: 100%;
+   overflow: hidden;
+}
+.trackContainer img{
+    max-width: 45%;
+    object-fit: cover;
+}
+.track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0 10px;
+    cursor: pointer;
+}
+.currentIndicator{
+    background: rgba(255, 255, 255, 0.9);
+}

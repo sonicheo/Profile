@@ -1,5 +1,49 @@
 .container{
     height: 100vh;
     width: 100%;
-    background-color: orange;
+    padding-top: 10%;
+    background-image: url('../images/COLOURlovers.com-Gothic_Wallpaper.jpg');
+    color: white;
+    text-shadow: 
+    0.025em 0.025em 0 #CCCCCC,
+    0.050em 0.050em 0 #75FF33,
+    0.075em 0.075em 0 #14CC4C,
+    0.1em 0.1em 0 #296D99;
+    text-align: center;
+}
+
+
+
+h1{
+    margin-bottom: 5%;
+}
+
+.iconContainter{
+    width: 100%;
+    height: 120px;
+}
+
+.linkedinA{
+    margin-right: 5%;
+}
+.linkedin{
+    width: 155px;
+    height: 100%;
+}
+.gMail{
+    width: 155px;
+    height: 100%;
+}
+
+
+.gitHub{
+    width: 20%;
+    height: 100%;
+}
+.downloadA{
+    margin-right: 5%;
+}
+.download{
+    width: 13%;
+    height: 100%;
 }

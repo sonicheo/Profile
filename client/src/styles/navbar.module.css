@@ -2,7 +2,7 @@
 .container{
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     width: 100%;
     height: auto;
@@ -31,4 +31,3 @@
     color: skyblue;
     cursor: pointer;
 }
-
