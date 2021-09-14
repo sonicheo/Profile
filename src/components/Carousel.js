@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import style from '../styles/carousel.module.css'
 import colorFill from '../images/colofill.png'
-import eCommerce from '../images/E-Commerse.PNG'
-import yhm from '../images/YHM.PNG'
+import eCommerce from '../images/commerce.png'
+import yhm from '../images/slate.png'
 
 const Carousel = () => {
     
