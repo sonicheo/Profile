@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
 import style from '../styles/carousel.module.css'
-import colorFill from '../images/Colorfill.png'
-import eCommerce from '../images/E-Commerse.PNG'
-import yhm from '../images/YHM.PNG'
-import juanImg from '../images/JuanG.png'
-
+import colorFill from '../images/colofill.png'
+import eCommerce from '../images/commerce.png'
+import yhm from '../images/slate.png'
 
 const Carousel = () => {
     
@@ -105,7 +103,7 @@ const Carousel = () => {
             <div className={style.trackContainer} >
                 <ul className={style.track} >
                     <li className={style.slide} class="current">
-                        <img src={juanImg}/>
+                        <img src={yhm}/>
                         <h1>Est sunt occaecat cillum nulla veniam proident.</h1>
                         <p> Nulla sit aliquip consectetur eu ullamco eiusmod proident culpa exercitation magna amet. Tempor laboris cillum mollit ipsum laborum ipsum irure Lorem Lorem Lorem amet exercitation aliqua nostrud. Proident in fugiat sunt aute dolore qui ullamco. In enim voluptate excepteur laborum ea. Dolor dolor fugiat deserunt velit occaecat nulla pariatur deserunt dolor sit sit commodo est eu. Do velit cupidatat et voluptate qui cupidatat consectetur incididunt duis id amet cillum nostrud. </p>
                     </li>
