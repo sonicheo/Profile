@@ -20,12 +20,12 @@
 }
 
 .trackContainer{
-    height: 100%;
+    height: 70vh;
     width: 100%;
-   overflow: hidden;
+    overflow: hidden;
 }
 .trackContainer img{
-    max-width: 45%;
+    max-width: 55%;
     object-fit: cover;
 }
 .track{
@@ -36,6 +36,9 @@
     position: relative;
     height: 100%;
     transition: transform 250ms ease-in;
+}
+.track p{
+    font-size: x-large;
 }
 .slide{
     position: absolute;

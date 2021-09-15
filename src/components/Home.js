@@ -164,8 +164,8 @@ const Home = () => {
         var circleArray = [];
 
         //Creates and randomnizes circle values
-        for(var i=0; i < 1000; i++){
-            var radius = 2;
+        for(var i=0; i < 3000; i++){
+            var radius = 3;
 
             circleArray.push(
                 //Values: x,y,dx,dy,radius
