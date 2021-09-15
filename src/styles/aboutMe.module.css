@@ -19,8 +19,10 @@
 
 
 .container h1{
+    margin-left: 10%;
+    max-width: 80%;
     word-wrap: break-word;
-    font-size: 25px;
+    font-size: 30px;
     position: relative;
     color: white;
     color: white;

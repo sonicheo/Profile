@@ -3,7 +3,7 @@
     width: 100%;
     align-items: center;
     background-image: url('../images/COLOURlovers.com-Gothic_Wallpaper.jpg');
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .container canvas{
@@ -18,7 +18,7 @@
 
 .container div h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
     position: relative;
     z-index: 1;
     color: white;

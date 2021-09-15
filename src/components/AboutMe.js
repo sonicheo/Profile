@@ -32,7 +32,7 @@ const AboutMe = () => {
         <div onClick={coordinate} className={style.container} id="aboutMe" >
             <img src={juanImg} />
             <h1>
-                Irure veniam deserunt velit ullamco reprehenderit labore amet deserunt incididunt qui. Qui consequat aliqua est duis ea ipsum sunt est ipsum. Deserunt aliquip aute aliqua ipsum reprehenderit proident fugiat nisi incididunt adipisicing ad eiusmod quis. Cillum amet proident voluptate qui magna velit tempor anim. Commodo sint pariatur dolore ipsum.
+                 Hi, my name is Juan and I'm a full stack developer. In addition to web development I like to make processes more efficient through scripts. I'm constantly looking to better myself as a developer and am always open to hearing about new opportunities. Please feel free to contact me directly at juan.a.gomez.villanueva@gmail.com
             </h1>
         </div>
     )
