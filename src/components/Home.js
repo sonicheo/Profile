@@ -10,10 +10,12 @@ const Home = () => {
     window.addEventListener('scroll', (e) =>{
         const target = document.querySelectorAll('.scrollHome');
         scrolled = window.pageYOffset;
+
+        console.log(scrolled)
         
         if(scrolled >= 0 && scrolled < 648){
             for(var i=0; i < target.length; i++){
-            
+                
                 var rateX = (scrolled) * target[i].dataset.ratex;
                 var rateY = (scrolled) * target[i].dataset.ratey;
     
@@ -143,8 +145,10 @@ const Home = () => {
                 y += dy;
 
                 //Mouse interaction
-
-                if(
+                if(scrolled >= 786 && radius > 3){
+                    radius -= 1
+                }
+                else if(
                     mouse.x - x < 50 &&
                     mouse.x - x > -50 &&
                     mouse.y - y < 50 &&

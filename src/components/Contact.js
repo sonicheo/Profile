@@ -24,7 +24,7 @@ const Contact = () => {
                 <a className={style.gitHubA}  href="https://www.linkedin.com/in/juan-gomez-077135172/">
                 <img 
                     className={style.gitHub} 
-                    src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png"/>
+                    src="https://www.pngkey.com/png/full/178-1787243_github-icon-png-github-icon-white-png.png"/>
                 </a>
                 <a className={style.downloadA}  href="https://www.linkedin.com/in/juan-gomez-077135172/">
                 <img 

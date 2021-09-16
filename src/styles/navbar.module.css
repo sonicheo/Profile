@@ -31,3 +31,10 @@
     color: skyblue;
     cursor: pointer;
 }
+
+
+@media (max-width: 597px) {
+    .container{
+        display: none;
+    }
+}

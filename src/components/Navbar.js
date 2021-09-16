@@ -9,8 +9,9 @@ const Navbar = () => {
     window.addEventListener('scroll', (e) =>{
         var scrolled = window.pageYOffset;
         var target = null;
+        console.log(scrolled);
         
-        if(scrolled >= 0 && scrolled < 648){
+        if(scrolled >= 0 && scrolled < 1088){
             target = document.querySelector('#navHome')
             target.style.color = 'green'
         }
@@ -19,7 +20,7 @@ const Navbar = () => {
             target.style.color = 'white'
         }
 
-        if(scrolled >= 648 && scrolled < 1296){
+        if(scrolled >= 1088 && scrolled < 2256){
             target = document.querySelector('#navAboutMe')
             target.style.color = 'green'
         }
@@ -28,7 +29,7 @@ const Navbar = () => {
             target.style.color = 'white'
         }
 
-        if(scrolled >= 1296 && scrolled < 1944){
+        if(scrolled >= 2256 && scrolled < 3424){
             target = document.querySelector('#navPortfolio')
             target.style.color = 'green'
         }
@@ -37,7 +38,7 @@ const Navbar = () => {
             target.style.color = 'white'
         }
 
-        if(scrolled >= 1944){
+        if(scrolled >= 3424){
             target = document.querySelector('#navContact')
             target.style.color = 'green'
         }

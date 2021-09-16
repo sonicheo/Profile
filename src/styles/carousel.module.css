@@ -20,7 +20,7 @@
 }
 
 .trackContainer{
-    height: 70vh;
+    height: 75vh;
     width: 100%;
     overflow: hidden;
 }
@@ -65,3 +65,18 @@
 .currentIndicator{
     background: rgba(255, 255, 255, 0.9);
 }
+
+@media (max-width: 1031px) {
+    .trackContainer img{
+        max-width: 90%;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 452px) {
+    .track p{
+        font-size: 20px;
+    }
+}
+
