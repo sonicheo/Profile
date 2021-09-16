@@ -20,7 +20,7 @@
 }
 
 .trackContainer{
-    height: 70vh;
+    height: 75vh;
     width: 100%;
     overflow: hidden;
 }
@@ -64,4 +64,10 @@
 }
 .currentIndicator{
     background: rgba(255, 255, 255, 0.9);
+}
+
+/* Resposive Break Points */
+
+@media only screen and (max-width: 1017px) {
+    
 }
