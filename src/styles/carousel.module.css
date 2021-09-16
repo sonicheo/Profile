@@ -66,8 +66,17 @@
     background: rgba(255, 255, 255, 0.9);
 }
 
-/* Resposive Break Points */
+@media (max-width: 1031px) {
+    .trackContainer img{
+        max-width: 90%;
+        object-fit: cover;
+    }
 
-@media only screen and (max-width: 1017px) {
-    
 }
+
+@media (max-width: 452px) {
+    .track p{
+        font-size: 20px;
+    }
+}
+

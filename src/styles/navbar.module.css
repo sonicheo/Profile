@@ -34,15 +34,6 @@
 
 
 @media (max-width: 597px) {
-    .container ul li a{
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 484px) {
     .container{
         display: none;
     }

@@ -11,3 +11,9 @@
     0.1em 0.1em 0 #296D99;
     overflow: hidden;
 }
+
+@media (max-width: 1031px) {
+    .container{
+        padding-top: 30%;
+    }
+}
