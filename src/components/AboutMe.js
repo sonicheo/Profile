@@ -6,7 +6,6 @@ const AboutMe = () => {
 
     function coordinate(e){
         var yCoordinate = window.pageYOffset;
-        console.log(yCoordinate)
     }
 
     window.addEventListener('scroll', (e) =>{
