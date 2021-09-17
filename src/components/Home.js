@@ -10,8 +10,7 @@ const Home = () => {
     window.addEventListener('scroll', (e) =>{
         const target = document.querySelectorAll('.scrollHome');
         scrolled = window.pageYOffset;
-
-        console.log(scrolled)
+        
         
         if(scrolled >= 0 && scrolled < 648){
             for(var i=0; i < target.length; i++){
