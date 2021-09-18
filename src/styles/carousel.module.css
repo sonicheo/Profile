@@ -14,9 +14,11 @@
 }
 .left{
     left: -30px;
+    font-size: 3rem;
 }
 .right{
     right: -30px;
+    font-size: 3rem;
 }
 
 .trackContainer{
