@@ -35,6 +35,12 @@ h1{
 .gMail{
     width: 155px;
     height: 100%;
+
+
+}
+
+.gMail:hover{
+    cursor: pointer;
 }
 
 

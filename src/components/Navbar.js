@@ -9,7 +9,6 @@ const Navbar = () => {
     window.addEventListener('scroll', (e) =>{
         var scrolled = window.pageYOffset;
         var target = null;
-        console.log(scrolled);
         
         if(scrolled >= 0 && scrolled < 1088){
             target = document.querySelector('#navHome')
