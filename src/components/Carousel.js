@@ -3,6 +3,7 @@ import style from '../styles/carousel.module.css'
 import colorFill from '../images/colofill.png'
 import eCommerce from '../images/commerce.png'
 import yhm from '../images/slate.png'
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Carousel = () => {
     
@@ -91,31 +92,34 @@ const Carousel = () => {
 
     return (
         <div className={style.carousel}>
-            <button 
+            <FaArrowLeft
                 className={style.carouselButton + ' ' + style.left}
                 onClick={e => {slideMovement(false, false)}}
-            >Left</button>
-            <button 
+            />
+            <FaArrowRight 
                 className={style.carouselButton + ' ' + style.right}
                 onClick={e => {slideMovement(true, false)}}
-            >Right</button>
+            />
             
             <div className={style.trackContainer} >
                 <ul className={style.track} >
                     <li className={style.slide} class="current">
                         <img src={yhm}/>
-                        <h1>Est sunt occaecat cillum nulla veniam proident.</h1>
-                        <p> Nulla sit aliquip consectetur eu ullamco eiusmod proident culpa exercitation magna amet. Tempor laboris cillum mollit ipsum laborum ipsum irure Lorem Lorem Lorem amet exercitation aliqua nostrud. Proident in fugiat sunt aute dolore qui ullamco. In enim voluptate excepteur laborum ea. Dolor dolor fugiat deserunt velit occaecat nulla pariatur deserunt dolor sit sit commodo est eu. Do velit cupidatat et voluptate qui cupidatat consectetur incididunt duis id amet cillum nostrud. </p>
+                        <h1>Your Harmonius Mind</h1>
+                        <p> My first site in which you can find various information about the goals and researching involving Your Harmonius Mid. </p>
+                        <p>Tools Used: Docker, React, AWS BeanStalk, SQLite, Strapi, Google/Facbook API</p>
                     </li>
                     <li className={style.slide}>
                         <img src={colorFill} />
-                        <h1>Est sunt occaecat cillum nulla veniam proident.</h1>
-                        <p> Nulla sit aliquip consectetur eu ullamco eiusmod proident culpa exercitation magna amet. Tempor laboris cillum mollit ipsum laborum ipsum irure Lorem Lorem Lorem amet exercitation aliqua nostrud. Proident in fugiat sunt aute dolore qui ullamco. In enim voluptate excepteur laborum ea. Dolor dolor fugiat deserunt velit occaecat nulla pariatur deserunt dolor sit sit commodo est eu. Do velit cupidatat et voluptate qui cupidatat consectetur incididunt duis id amet cillum nostrud. </p>
+                        <h1>Color Fill</h1>
+                        <p> A project in which I used Dijkstra PathFinding Algorithm to fill in a chosen color. </p>
+                        <p>Tools Used: React, AWS Simplify, Javascript</p>
                     </li>
                     <li className={style.slide}>
                         <img src={eCommerce} />
-                        <h1>Est sunt occaecat cillum nulla veniam proident.</h1>
-                        <p> Nulla sit aliquip consectetur eu ullamco eiusmod proident culpa exercitation magna amet. Tempor laboris cillum mollit ipsum laborum ipsum irure Lorem Lorem Lorem amet exercitation aliqua nostrud. Proident in fugiat sunt aute dolore qui ullamco. In enim voluptate excepteur laborum ea. Dolor dolor fugiat deserunt velit occaecat nulla pariatur deserunt dolor sit sit commodo est eu. Do velit cupidatat et voluptate qui cupidatat consectetur incididunt duis id amet cillum nostrud. </p>
+                        <h1>E-Commerce Site</h1>
+                        <p> Currently in the works, a project to where you can come in and commision drawings.</p>
+                        <p>Tools Used: React, Docker, Strapi, Google API</p>
                     </li>
                 </ul>
             </div>
