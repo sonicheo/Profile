@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import style from '../styles/carousel.module.css'
-import colorFill from '../images/colofill.png'
-import eCommerce from '../images/commerce.png'
-import yhm from '../images/slate.png'
+import style from '../../styles/carousel.module.css'
+import colorFill from '../../images/colofill.png'
+import eCommerce from '../../images/commerce.png'
+import yhm from '../../images/slate.png'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Carousel = () => {

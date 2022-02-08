@@ -1,6 +1,6 @@
 import React from 'react'
-import style from '../styles/contact.module.css'
-import file from '../data/Resume_JuanG.docx.pdf'
+import style from '../../styles/contact.module.css'
+import file from '../../data/Resume_JuanG.pdf'
 
 const Contact = () => {
 

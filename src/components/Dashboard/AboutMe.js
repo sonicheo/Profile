@@ -1,6 +1,6 @@
 import React from 'react'
-import style from '../styles/aboutMe.module.css'
-import juanImg from '../images/JuanG.png'
+import style from '../../styles/aboutMe.module.css'
+import juanImg from '../../images/JuanG.png'
 
 const AboutMe = () => {
 

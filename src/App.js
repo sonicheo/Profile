@@ -1,17 +1,16 @@
-import Navbar from "./components/Navbar"
-import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
+import { Router} from "@reach/router"
+import Dashboard from "./views/Dashboard";
+
+import QuoteGenerator from "./views/projects/QuoteGenerator";
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
-      <AboutMe/>
-      <Portfolio/>
-      <Contact/>
+      <Router>
+        <Dashboard  path="/" />
+        <QuoteGenerator  path="/projects/quote_generator" />
+      </Router>
     </div>
   );
 }
