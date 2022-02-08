@@ -1,7 +1,7 @@
 import { Router} from "@reach/router"
 import Dashboard from "./views/Dashboard";
 
-import QuoteGenerator from "./views/QuoteGenerator";
+import QuoteGenerator from "./views/projects/QuoteGenerator";
 
 
 function App() {
