@@ -17,6 +17,7 @@ const QuoteGenerator = () => {
     const [author, setAuthor] = useState();
     const [quoteText, setQuoteText] = useState();
 
+    //For those without authors
     const fakeAuthors = ["Kassidy Pham", "Jeffrey Do", "Hanabi Mcgee", "Unknown"] 
 
 
@@ -33,7 +34,7 @@ const QuoteGenerator = () => {
         const quote = quoteData[Math.floor(Math.random() * quoteData.length)];
 
         if(!quote.author){
-            setAuthor([Math.floor(Math.random() * fakeAuthors.length)]);
+            setAuthor(fakeAuthors[Math.floor(Math.random() * fakeAuthors.length)]);
         }
         else{
             setAuthor(quote.author);
@@ -47,20 +48,23 @@ const QuoteGenerator = () => {
     useEffect(() => {
         axios.get("https://type.fit/api/quotes")
         .then(response => {
-
-            if(!quoteData){
-                setQuoteData(response.data)
-            }
-            else{   
-                newQuote();
-                setLoaded(true);
-            }
+            setQuoteData(response.data)
         })
-    }, [quoteData]);
+    }, []);
+
+
+    // To call at the start the moment quoteData is populated
+    useEffect(()=>{
+        if(quoteData){
+            newQuote();
+            setLoaded(true);
+        }
+    },[quoteData])
+
 
 
     return (
-        <>
+        <div className={style.container} >
             <div className={style.quoteContainer} id="quote-container">
 
                 <div className={style.quote_text}>
@@ -84,7 +88,7 @@ const QuoteGenerator = () => {
                     <button onClick={newQuote} id="new-quote">New Quote</button>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
