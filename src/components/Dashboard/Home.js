@@ -1,7 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from '../../styles/home.module.css'
 
 const Home = () => {
+
+    //Variable to check if you are in mobile device
+    let mobile = false;
+    let circleAmount = 3000;
 
     //Gets Scroll offset
     var scrolled = 0;
@@ -56,8 +60,14 @@ const Home = () => {
     }
 
 
-    
+    //Starts on load
     useEffect(() => {
+        //Checks if you are in mobile device
+        if(window.screen.width < 600){
+            mobile = true;
+            circleAmount = 500;
+        };
+
         //Starter for 2d canvases
         var canvas = document.querySelector('#canvasHome')
         var c = canvas.getContext('2d');
@@ -143,21 +153,24 @@ const Home = () => {
                 x += dx;
                 y += dy;
 
-                //Mouse interaction
-                if(scrolled >= 786 && radius > 3){
-                    radius -= 1
-                }
-                else if(
-                    mouse.x - x < 50 &&
-                    mouse.x - x > -50 &&
-                    mouse.y - y < 50 &&
-                    mouse.y -y > -50 &&
-                    radius < 30
-                ) {
-                    radius += 1
-                }
-                else if(radius > this.size){
-                    radius -= 1
+                
+                if(!mobile){
+                    //Mouse interaction
+                    if(scrolled >= 786 && radius > 3){
+                        radius -= 1
+                    }
+                    else if(
+                        mouse.x - x < 50 &&
+                        mouse.x - x > -50 &&
+                        mouse.y - y < 50 &&
+                        mouse.y -y > -50 &&
+                        radius < 30
+                    ) {
+                        radius += 1
+                    }
+                    else if(radius > this.size){
+                        radius -= 1
+                    }
                 }
             }
         }
@@ -167,7 +180,7 @@ const Home = () => {
         var circleArray = [];
 
         //Creates and randomnizes circle values
-        for(var i=0; i < 3000; i++){
+        for(var i=0; i < circleAmount; i++){
             var radius = 3;
 
             circleArray.push(

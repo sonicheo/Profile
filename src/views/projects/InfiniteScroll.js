@@ -66,33 +66,33 @@ const InfiniteScroll = () => {
   },[pictureData])
 
 
-
-
   return (
-    <>
-      {/* Title */}
-      <h1>UNSPLASH API-INFINITE SCROLL</h1>
+    <div className={style.container}>
+      <div>
+        {/* Title */}
+        <h1>UNSPLASH API-INFINITE SCROLL</h1>
 
-      {/* Loader */}
-      <div className={style.loader} hidden>
-        <img src={loading} alt="loading" />
-      </div>
+        {/* Loader */}
+        <div className={style.loader} hidden>
+          <img src={loading} alt="loading" />
+        </div>
 
-      {/* Image Container */}
-      <div className={style.imageContainer}>
-        {
-          // If it's loaded, go through data
-          loaded ? pictureData.map((items, id) =>{
-            return(
-              <a key={id} href={items.links.html} >
-                <img onLoad={readyChecker} key={id} src={items.urls.regular} title={items.description} alt={items.description}></img>
-              </a>
-            )
-          })
-          : ""  
-        }
+        {/* Image Container */}
+        <div className={style.imageContainer}>
+          {
+            // If it's loaded, go through data
+            loaded ? pictureData.map((items, id) =>{
+              return(
+                <a key={id} href={items.links.html} >
+                  <img onLoad={readyChecker} key={id} src={items.urls.regular} title={items.description} alt={items.description}></img>
+                </a>
+              )
+            })
+            : ""  
+          }
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
