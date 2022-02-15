@@ -1,5 +1,5 @@
 .container{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     padding-top: 10%;
     background-image: url('../images/COLOURlovers.com-Gothic_Wallpaper.jpg');
@@ -15,42 +15,60 @@
 
 
 
-h1{
-    margin-bottom: 5%;
-    margin-top: 5%;
-}
-
-.iconContainter{
-    width: 100%;
-    height: 120px;
-}
 
 .linkedinA{
-    margin-right: 5%;
-}
-.linkedin{
-    width: 155px;
-    height: 100%;
-}
-.gMail{
-    width: 155px;
-    height: 100%;
-
-
+    font-size: 8rem;
 }
 
-.gMail:hover{
+.gMailA{
+    font-size: 8rem;
+    margin-left: 200px;
+}
+
+.gMailA:hover{
     cursor: pointer;
 }
 
 
-.gitHub{
-    width: 10%;
-    height: 100%;
-    margin-right: 2%;
+.gitHubA{
+    font-size: 8rem;
 }
 
-.download{
-    width: 10%;
-    height: 100%;
+.downloadA{
+    font-size: 8rem;
+    margin-left: 200px;
+}
+
+.textBottom{
+    margin-top: 5%;
+}
+
+/* Media Query: For Tablets or Smaller */
+@media screen and (max-width: 1000px){
+    .linkedinA{
+        font-size: 4rem;
+    }
+    
+    .gMailA{
+        font-size: 4rem;
+        margin-left: 100px;
+    }
+    
+    .gMailA:hover{
+        cursor: pointer;
+    }
+    
+    
+    .gitHubA{
+        font-size: 4rem;
+    }
+    
+    .downloadA{
+        font-size: 4rem;
+        margin-left: 100px;
+    }
+    
+    .textBottom{
+        margin-top: 40%;
+    }
 }

@@ -5,7 +5,7 @@ html {
 }
 
 
-body{
+.container{
     margin: 0;
     font-family: 'Skranji', cursive;
     background-color: whitesmoke;
@@ -14,7 +14,7 @@ body{
 h1{
     margin: 0;
     text-align: center;
-    margin: 25px 15px;
+    margin-bottom: 25px;
     font-size: 40px;
     letter-spacing: 5px;
 }

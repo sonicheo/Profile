@@ -1,13 +1,42 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from '../../styles/carousel.module.css'
 import colorFill from '../../images/colofill.png'
 import eCommerce from '../../images/commerce.png'
 import yhm from '../../images/slate.png'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
+import pictures from '../../images/colofill.png'
+
 const Carousel = () => {
     
     let track, slides, slideWidth, dotsNav, dots;
+
+    //Data for the Carousel 
+    const [carouselData, setCarouselData] = useState([
+        {
+            image: "quote_generator.png",
+            title: "Quote Generator",
+            description: "Pulls from Fit Quotes API to render random quotes. Allows you to tweet a quote that you like using a Twitter query string.",
+            tools: "React, Twitter Query, Fit API",
+            link: "/projects/quote_generator"
+        },
+        {
+            image: "infinite_scroll.png",
+            title: "Infinite Scroll",
+            description: "The goal for this project is to mimic social media scrolling. It uses the Unsplash API to pull the photos and descrptions. Unfortunately, the Unsplash API limits free users to 50 requests per hour.",
+            tools: "React, Unsplash API",
+            link: "/projects/infinite_scroll"
+        },
+        {
+            image: "slate.png",
+            title: "Your Harmonius Mind",
+            description: "My first site in which you can find various information about the goals and researching involving Your Harmonius Mind. ",
+            tools: "Docker, React, AWS BeanStalk, SQLite, Strapi, Google/Facbook API",
+            link: ""
+        }
+    ])
+
+
 
     //Wait for page to load before assigning
     useEffect(() => {
@@ -102,35 +131,44 @@ const Carousel = () => {
             />
             
             <div className={style.trackContainer} >
+
                 <ul className={style.track} >
-                    <li className={style.slide} class="current">
-                        <img src={yhm}/>
-                        <h1>Your Harmonius Mind</h1>
-                        <p> My first site in which you can find various information about the goals and researching involving Your Harmonius Mid. </p>
-                        <p>Tools Used: Docker, React, AWS BeanStalk, SQLite, Strapi, Google/Facbook API</p>
-                    </li>
-                    <li className={style.slide}>
-                        <img src={colorFill} />
-                        <h1>Color Fill</h1>
-                        <p> A project in which I used Dijkstra PathFinding Algorithm to fill in a chosen color. </p>
-                        <p>Tools Used: React, AWS Simplify, Javascript</p>
-                    </li>
-                    <li className={style.slide}>
-                        <img src={eCommerce} />
-                        <h1>E-Commerce Site</h1>
-                        <p> Currently in the works, a project to where you can come in and commision drawings.</p>
-                        <p>Tools Used: React, Docker, Strapi, Google API</p>
-                    </li>
+                {
+                    carouselData.map((index, id) =>{
+                        console.log(index.image);
+                        return(
+                            <li id={id} className={id==0 ? 'current' : style.slide} >
+                                <div className={style.imageContainer} >
+                                    <img  src={require('../../images/' + index.image).default} alt={index.title} />
+                                </div>
+                                <h1>{index.title}</h1>
+                                <p>Description:  {index.description}</p>
+                                <p>Tools: {index.tools}</p>
+                                <p>
+                                    Link: 
+                                    <a href={index.link ? index.link : ""}> {index.link ? index.link : "In Progress"} </a>
+                                </p>
+                                
+                            </li>
+                        )
+                    })
+                }
                 </ul>
+               
             </div>
 
             <div 
                 className={style.nav}
                 onClick={e => {navigator(e)}}
             >
-                <button className={style.indicator+" "+style.currentIndicator} />
-                <button className={style.indicator}/>
-                <button className={style.indicator}/>
+                {
+                    carouselData.map((index, id) => {
+                        return(
+                            <button className={id == 0 ? style.indicator+" "+style.currentIndicator: style.indicator} />
+                        )
+                    })
+                }
+
             </div>
         </div>
     )

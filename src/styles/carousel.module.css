@@ -67,6 +67,18 @@
 .currentIndicator{
     background: rgba(255, 255, 255, 0.9);
 }
+a:link{
+    text-decoration: none;
+}
+
+.imageContainer{
+    height: 60%;
+}
+
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+}
 
 @media (max-width: 1031px) {
     .trackContainer img{
