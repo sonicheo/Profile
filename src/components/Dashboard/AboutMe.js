@@ -31,7 +31,7 @@ const AboutMe = () => {
         <div onClick={coordinate} className={style.container} id="aboutMe" >
             <img src={juanImg} />
             <h1>
-                 Hi, my name is Juan and I'm a full stack developer. In addition to web development I like to make processes more efficient through scripts. I'm constantly looking to better myself as a developer and am always open to hearing about new opportunities. Please feel free to contact me directly at juan.a.gomez.villanueva@gmail.com
+                My coding experience comes from an apprenticeship opportunity that started with a 14-week coding bootcamp(Coding Dojo), where I learned a plethora of different languages and tools including, Python, Java, Javascript, Spring, and React. The second part of the apprenticeship was through Slate Impact where I developed a web platform for a client using React and NodeJS. Through the apprenticeship I gained a deep familiarity with AWS, CI/CD principles and practice, TravisCI, Docker, Postgres, and various APIs.
             </h1>
         </div>
     )
