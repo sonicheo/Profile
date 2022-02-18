@@ -12,26 +12,34 @@ const Carousel = () => {
     let track, slides, slideWidth, dotsNav, dots;
 
     //Data for the Carousel 
+    // Note: must make json file when this gets too big
     const [carouselData, setCarouselData] = useState([
+        {
+            image: "thisSite.png",
+            title: "This Site",
+            description: "This site and all projects were deployed using AWS and update using TravisCI",
+            tools: "React, Canvas, AWS, TravisCI",
+            link: ""
+        },
         {
             image: "quote_generator.png",
             title: "Quote Generator",
             description: "Pulls from Fit Quotes API to render random quotes. Allows you to tweet a quote that you like using a Twitter query string.",
-            tools: "React, Twitter Query, Fit API",
+            tools: "React, Twitter Query, Fit API, AWS",
             link: "/projects/quote_generator"
         },
         {
             image: "infinite_scroll.png",
             title: "Infinite Scroll",
             description: "The goal for this project is to mimic social media scrolling. It uses the Unsplash API to pull the photos and descrptions. Unfortunately, the Unsplash API limits free users to 50 requests per hour.",
-            tools: "React, Unsplash API",
+            tools: "React, Unsplash API, AWS",
             link: "/projects/infinite_scroll"
         },
         {
             image: "pictureInPicture.png",
             title: "Picture In Picture",
             description: "The goal of this project is to mimic screen sharing typically found in conference call apps.",
-            tools: "React",
+            tools: "Reac, AWS",
             link: "/projects/in_picture"
         },
         {
