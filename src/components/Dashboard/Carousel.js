@@ -28,6 +28,13 @@ const Carousel = () => {
             link: "/projects/infinite_scroll"
         },
         {
+            image: "pictureInPicture.png",
+            title: "Picture In Picture",
+            description: "The goal of this project is to mimic screen sharing typically found in conference call apps.",
+            tools: "React",
+            link: "/projects/in_picture"
+        },
+        {
             image: "slate.png",
             title: "Your Harmonius Mind",
             description: "My first site in which you can find various information about the goals and researching involving Your Harmonius Mind. ",
